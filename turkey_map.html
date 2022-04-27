@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1d4ca2af4b04329977e6aa5f808cfc8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c1d4ca2af4b04329977e6aa5f808cfc8" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+ 
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+     
+<div class='legend-title'>Attack type</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#009900;opacity:0.7;'></span>Looting/property destruction</li>
+    <li><span style='background:#CC0000;opacity:0.7;'></span>Shelling/artillery/missile attack</li>
+    <li><span style='background:#990099;opacity:0.7;'></span>Armed clash</li>
+    <li><span style='background:#C0C0C0;opacity:0.7;'></span>Grenade</li>
+    <li><span style='background:#0000FF;opacity:0.7;'></span>Attack</li>
+    <li><span style='background:#CC6600;opacity:0.7;'></span>Mob violence</li>
+    <li><span style='background:#FF0000;opacity:0.7;'></span>Remote explosive/landmine/IED</li>
+    <li><span style='background:#FFB266;opacity:0.7;'></span>Violent demonstration</li>
+
+  </ul>
+</div>
+</div>
+ 
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>    
+    
+            var map_c1d4ca2af4b04329977e6aa5f808cfc8 = L.map(
+                "map_c1d4ca2af4b04329977e6aa5f808cfc8",
+                {
+                    center: [39.12428237164654, 36.35543327084148],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85244b69d60148a89142dedaee71edd4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+            var circle_de164b6136354de59094b34ceb8752c3 = L.circle(
+                [40.7639, 29.9417],
+                {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000FF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.254833995939045, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_ff07575fd71e4eef9ac8491e0f830e1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b7509ccfc4243148b25fb422a23c69a = $(`<div id="html_3b7509ccfc4243148b25fb422a23c69a" style="width: 100.0%; height: 100.0%;">Fatalities: 1<br> Actor: Unidentified Armed Group<br> Date: 19 February 2022</div>`)[0];
+            popup_ff07575fd71e4eef9ac8491e0f830e1f.setContent(html_3b7509ccfc4243148b25fb422a23c69a);
+        
+
+        circle_de164b6136354de59094b34ceb8752c3.bindPopup(popup_ff07575fd71e4eef9ac8491e0f830e1f)
+        ;
+
+        
+    
+    
+            var circle_87555e1e768e43589938fb4198a7393a = L.circle(
+                [40.0143, 30.1849],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_af8ebf7ebdcf467d9ac32f9077ace036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f6d779f2a94472d951da64a83ee7a8c = $(`<div id="html_2f6d779f2a94472d951da64a83ee7a8c" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 21 February 2022</div>`)[0];
+            popup_af8ebf7ebdcf467d9ac32f9077ace036.setContent(html_2f6d779f2a94472d951da64a83ee7a8c);
+        
+
+        circle_87555e1e768e43589938fb4198a7393a.bindPopup(popup_af8ebf7ebdcf467d9ac32f9077ace036)
+        ;
+
+        
+    
+    
+            var circle_6f0256060b7d4288a553b04ed041a930 = L.circle(
+                [36.8664, 30.6303],
+                {"bubblingMouseEvents": true, "color": "#CC6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CC6600", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_65f5b278bc5f4535970ae87c3c0ec7bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b58bce7eb7d444c8a9aa356118e5b04 = $(`<div id="html_0b58bce7eb7d444c8a9aa356118e5b04" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 22 February 2022</div>`)[0];
+            popup_65f5b278bc5f4535970ae87c3c0ec7bc.setContent(html_0b58bce7eb7d444c8a9aa356118e5b04);
+        
+
+        circle_6f0256060b7d4288a553b04ed041a930.bindPopup(popup_65f5b278bc5f4535970ae87c3c0ec7bc)
+        ;
+
+        
+    
+    
+            var circle_4276ed087d2141498914f133bf828c5e = L.circle(
+                [36.5872, 36.1735],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_37c3a78a0dc74941a72c754048513ace = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0583b78c905b46818184b1e0095139e5 = $(`<div id="html_0583b78c905b46818184b1e0095139e5" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 23 February 2022</div>`)[0];
+            popup_37c3a78a0dc74941a72c754048513ace.setContent(html_0583b78c905b46818184b1e0095139e5);
+        
+
+        circle_4276ed087d2141498914f133bf828c5e.bindPopup(popup_37c3a78a0dc74941a72c754048513ace)
+        ;
+
+        
+    
+    
+            var circle_f02b5d86d7964f6b94fd4893ccf63496 = L.circle(
+                [40.8299, 29.3048],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_f17b6451b5a94074a06c6a6f4b40b42a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b6f2332839f44b99b1641512c1f187f = $(`<div id="html_0b6f2332839f44b99b1641512c1f187f" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 23 February 2022</div>`)[0];
+            popup_f17b6451b5a94074a06c6a6f4b40b42a.setContent(html_0b6f2332839f44b99b1641512c1f187f);
+        
+
+        circle_f02b5d86d7964f6b94fd4893ccf63496.bindPopup(popup_f17b6451b5a94074a06c6a6f4b40b42a)
+        ;
+
+        
+    
+    
+            var circle_8706f1e3b9cd4e91bc5aa113b1616f93 = L.circle(
+                [38.623, 27.4356],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_f5efdc1b0c83464486ce6e8ad91eff7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a5d5d7ac7014423a002bf095d0dfa49 = $(`<div id="html_3a5d5d7ac7014423a002bf095d0dfa49" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 23 February 2022</div>`)[0];
+            popup_f5efdc1b0c83464486ce6e8ad91eff7d.setContent(html_3a5d5d7ac7014423a002bf095d0dfa49);
+        
+
+        circle_8706f1e3b9cd4e91bc5aa113b1616f93.bindPopup(popup_f5efdc1b0c83464486ce6e8ad91eff7d)
+        ;
+
+        
+    
+    
+            var circle_3d51dd65ed9549cca19da1687edaf68c = L.circle(
+                [37.5736, 44.2872],
+                {"bubblingMouseEvents": true, "color": "#990099", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#990099", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_41414f48b5fc4498abdab543f4743154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0bf70b7f254d65966a5fd61f76d61b = $(`<div id="html_ff0bf70b7f254d65966a5fd61f76d61b" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 27 February 2022</div>`)[0];
+            popup_41414f48b5fc4498abdab543f4743154.setContent(html_ff0bf70b7f254d65966a5fd61f76d61b);
+        
+
+        circle_3d51dd65ed9549cca19da1687edaf68c.bindPopup(popup_41414f48b5fc4498abdab543f4743154)
+        ;
+
+        
+    
+    
+            var circle_764d4d8a6e8e4cbcada29a0aca575250 = L.circle(
+                [39.8503, 33.4529],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_ca5c230c36724364b533fcc458bc39a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f54e1a4041b14ef79ecf1f1cbe30325c = $(`<div id="html_f54e1a4041b14ef79ecf1f1cbe30325c" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 01 March 2022</div>`)[0];
+            popup_ca5c230c36724364b533fcc458bc39a1.setContent(html_f54e1a4041b14ef79ecf1f1cbe30325c);
+        
+
+        circle_764d4d8a6e8e4cbcada29a0aca575250.bindPopup(popup_ca5c230c36724364b533fcc458bc39a1)
+        ;
+
+        
+    
+    
+            var circle_457d3f3e4159428eaef758283590da09 = L.circle(
+                [40.7639, 29.9418],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_0f30a870e4e54c64a8365c884bc84991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4280ce4ef4545d5b2d3117db01a42a1 = $(`<div id="html_b4280ce4ef4545d5b2d3117db01a42a1" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 01 March 2022</div>`)[0];
+            popup_0f30a870e4e54c64a8365c884bc84991.setContent(html_b4280ce4ef4545d5b2d3117db01a42a1);
+        
+
+        circle_457d3f3e4159428eaef758283590da09.bindPopup(popup_0f30a870e4e54c64a8365c884bc84991)
+        ;
+
+        
+    
+    
+            var circle_8782c6688a7b4a57920dd3a04ee02ecb = L.circle(
+                [39.6868, 30.5713],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_487645c381b2468cab05caf17ca0f8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eacd43ed5d4f4393959af940ff44a9f8 = $(`<div id="html_eacd43ed5d4f4393959af940ff44a9f8" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 02 March 2022</div>`)[0];
+            popup_487645c381b2468cab05caf17ca0f8e0.setContent(html_eacd43ed5d4f4393959af940ff44a9f8);
+        
+
+        circle_8782c6688a7b4a57920dd3a04ee02ecb.bindPopup(popup_487645c381b2468cab05caf17ca0f8e0)
+        ;
+
+        
+    
+    
+            var circle_bf874ee3c75d4ccaaeaef507c2652bf2 = L.circle(
+                [37.5736, 44.2873],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_36798501f1bd467990bdcc03965d3479 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebd42ea4b1aa41d4a913a63b8b588b45 = $(`<div id="html_ebd42ea4b1aa41d4a913a63b8b588b45" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 02 March 2022</div>`)[0];
+            popup_36798501f1bd467990bdcc03965d3479.setContent(html_ebd42ea4b1aa41d4a913a63b8b588b45);
+        
+
+        circle_bf874ee3c75d4ccaaeaef507c2652bf2.bindPopup(popup_36798501f1bd467990bdcc03965d3479)
+        ;
+
+        
+    
+    
+            var circle_499aba4f6ad64f2dac145b7d93d8d197 = L.circle(
+                [38.5535, 43.6212],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_0878c9796e184e609e9aaf852d0c50c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_def88504a9194108ae9d0e91e122379a = $(`<div id="html_def88504a9194108ae9d0e91e122379a" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 03 March 2022</div>`)[0];
+            popup_0878c9796e184e609e9aaf852d0c50c7.setContent(html_def88504a9194108ae9d0e91e122379a);
+        
+
+        circle_499aba4f6ad64f2dac145b7d93d8d197.bindPopup(popup_0878c9796e184e609e9aaf852d0c50c7)
+        ;
+
+        
+    
+    
+            var circle_08bd3ecc3d9d493faf454384cac40c72 = L.circle(
+                [37.716, 33.5506],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_82124e0fda6a4edd819526f393f0e019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf40f9fc15ff479fb21f44c4beaeb910 = $(`<div id="html_bf40f9fc15ff479fb21f44c4beaeb910" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 05 March 2022</div>`)[0];
+            popup_82124e0fda6a4edd819526f393f0e019.setContent(html_bf40f9fc15ff479fb21f44c4beaeb910);
+        
+
+        circle_08bd3ecc3d9d493faf454384cac40c72.bindPopup(popup_82124e0fda6a4edd819526f393f0e019)
+        ;
+
+        
+    
+    
+            var circle_921c5cb824ea4b96a9d133449d78312c = L.circle(
+                [41.1836, 28.7402],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_d9a6f265e92845928d2d8e7fddbfd68a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c30b63621fb48f6b73e540fb144cf2d = $(`<div id="html_1c30b63621fb48f6b73e540fb144cf2d" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 06 March 2022</div>`)[0];
+            popup_d9a6f265e92845928d2d8e7fddbfd68a.setContent(html_1c30b63621fb48f6b73e540fb144cf2d);
+        
+
+        circle_921c5cb824ea4b96a9d133449d78312c.bindPopup(popup_d9a6f265e92845928d2d8e7fddbfd68a)
+        ;
+
+        
+    
+    
+            var circle_9831ee45372145dd97ef112ab1e3ac69 = L.circle(
+                [37.8842, 32.4922],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_1c9ec0d370aa4708aeaf88afdbcff2b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_594df89526264a6da80d5fed54cb2433 = $(`<div id="html_594df89526264a6da80d5fed54cb2433" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 06 March 2022</div>`)[0];
+            popup_1c9ec0d370aa4708aeaf88afdbcff2b4.setContent(html_594df89526264a6da80d5fed54cb2433);
+        
+
+        circle_9831ee45372145dd97ef112ab1e3ac69.bindPopup(popup_1c9ec0d370aa4708aeaf88afdbcff2b4)
+        ;
+
+        
+    
+    
+            var circle_88433a380c634dd1b783f88175d8dd85 = L.circle(
+                [36.888, 30.7152],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_f6b3a97bd88e4831bab439ef7991a02d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67b7ab96aff54946b24a62ca4354b00f = $(`<div id="html_67b7ab96aff54946b24a62ca4354b00f" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 07 March 2022</div>`)[0];
+            popup_f6b3a97bd88e4831bab439ef7991a02d.setContent(html_67b7ab96aff54946b24a62ca4354b00f);
+        
+
+        circle_88433a380c634dd1b783f88175d8dd85.bindPopup(popup_f6b3a97bd88e4831bab439ef7991a02d)
+        ;
+
+        
+    
+    
+            var circle_a6294b2a94e741c7bd3c4f62dec8ee34 = L.circle(
+                [40.9931, 29.1338],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_4a5e2ae714754303960252d95be287ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e96376e4e1cd44e8846966724e71fa53 = $(`<div id="html_e96376e4e1cd44e8846966724e71fa53" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 07 March 2022</div>`)[0];
+            popup_4a5e2ae714754303960252d95be287ac.setContent(html_e96376e4e1cd44e8846966724e71fa53);
+        
+
+        circle_a6294b2a94e741c7bd3c4f62dec8ee34.bindPopup(popup_4a5e2ae714754303960252d95be287ac)
+        ;
+
+        
+    
+    
+            var circle_3e62e74ec65d44d495e74b0e2635ae66 = L.circle(
+                [41.8921, 33.0044],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_84a8eef230f14e7eb8438f310678dcd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71db244e07994160bc3ec13ddc0239ba = $(`<div id="html_71db244e07994160bc3ec13ddc0239ba" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 08 March 2022</div>`)[0];
+            popup_84a8eef230f14e7eb8438f310678dcd1.setContent(html_71db244e07994160bc3ec13ddc0239ba);
+        
+
+        circle_3e62e74ec65d44d495e74b0e2635ae66.bindPopup(popup_84a8eef230f14e7eb8438f310678dcd1)
+        ;
+
+        
+    
+    
+            var circle_2f94499f0a534cea9158e11602f14f66 = L.circle(
+                [41.085, 28.2638],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_99c270885df043bba8e1a6ad545e0729 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61631a0d1e484677bba06f02e3ecf493 = $(`<div id="html_61631a0d1e484677bba06f02e3ecf493" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 08 March 2022</div>`)[0];
+            popup_99c270885df043bba8e1a6ad545e0729.setContent(html_61631a0d1e484677bba06f02e3ecf493);
+        
+
+        circle_2f94499f0a534cea9158e11602f14f66.bindPopup(popup_99c270885df043bba8e1a6ad545e0729)
+        ;
+
+        
+    
+    
+            var circle_210a438130244817a8df20abe609d1c7 = L.circle(
+                [36.9875, 35.3059],
+                {"bubblingMouseEvents": true, "color": "#FFB266", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB266", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_14a465a707cd4afe90f3476ba7e16a2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18b818557f3a4524ae05325f7ae3584a = $(`<div id="html_18b818557f3a4524ae05325f7ae3584a" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 08 March 2022</div>`)[0];
+            popup_14a465a707cd4afe90f3476ba7e16a2c.setContent(html_18b818557f3a4524ae05325f7ae3584a);
+        
+
+        circle_210a438130244817a8df20abe609d1c7.bindPopup(popup_14a465a707cd4afe90f3476ba7e16a2c)
+        ;
+
+        
+    
+    
+            var circle_e82e24392dad40bd850c9b2106a9d240 = L.circle(
+                [38.4173, 27.1302],
+                {"bubblingMouseEvents": true, "color": "#FFB266", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB266", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_efb6ab0b450c4a91b95bfe130b7286be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d8b423974124765b531af67969d6920 = $(`<div id="html_5d8b423974124765b531af67969d6920" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 08 March 2022</div>`)[0];
+            popup_efb6ab0b450c4a91b95bfe130b7286be.setContent(html_5d8b423974124765b531af67969d6920);
+        
+
+        circle_e82e24392dad40bd850c9b2106a9d240.bindPopup(popup_efb6ab0b450c4a91b95bfe130b7286be)
+        ;
+
+        
+    
+    
+            var circle_ad76980f479c4324b9a00b00e9e202f1 = L.circle(
+                [41.0369, 28.9775],
+                {"bubblingMouseEvents": true, "color": "#FFB266", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB266", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_3c85bc24a4044b91af4208a6acf4d535 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af405c731b4647308441a9800565bf89 = $(`<div id="html_af405c731b4647308441a9800565bf89" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 08 March 2022</div>`)[0];
+            popup_3c85bc24a4044b91af4208a6acf4d535.setContent(html_af405c731b4647308441a9800565bf89);
+        
+
+        circle_ad76980f479c4324b9a00b00e9e202f1.bindPopup(popup_3c85bc24a4044b91af4208a6acf4d535)
+        ;
+
+        
+    
+    
+            var circle_92337729df2c487398230c2d3bd9cf34 = L.circle(
+                [40.8028, 29.4307],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_40b3aa518bef4077af0ac0f057b475cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_661dd71bc9ac4ba2834a0cda6dc94f8b = $(`<div id="html_661dd71bc9ac4ba2834a0cda6dc94f8b" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 10 March 2022</div>`)[0];
+            popup_40b3aa518bef4077af0ac0f057b475cc.setContent(html_661dd71bc9ac4ba2834a0cda6dc94f8b);
+        
+
+        circle_92337729df2c487398230c2d3bd9cf34.bindPopup(popup_40b3aa518bef4077af0ac0f057b475cc)
+        ;
+
+        
+    
+    
+            var circle_5fab22c3096f46c5b374679c40cf4cff = L.circle(
+                [39.9078, 30.0367],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_b486bf49b8b64157a76c5c83da3ea0ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9511ed9d63f745f7be0828517acdcd53 = $(`<div id="html_9511ed9d63f745f7be0828517acdcd53" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 11 March 2022</div>`)[0];
+            popup_b486bf49b8b64157a76c5c83da3ea0ba.setContent(html_9511ed9d63f745f7be0828517acdcd53);
+        
+
+        circle_5fab22c3096f46c5b374679c40cf4cff.bindPopup(popup_b486bf49b8b64157a76c5c83da3ea0ba)
+        ;
+
+        
+    
+    
+            var circle_3f14405c49c04d019d405b216216065f = L.circle(
+                [41.0272, 29.0163],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_7f754c0e50a540afb6f7db3f60af9b07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc4d9c3c4d12436c812f0df4aa22047b = $(`<div id="html_dc4d9c3c4d12436c812f0df4aa22047b" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: HBDH: Peoples United Revolutionary Movement<br> Date: 11 March 2022</div>`)[0];
+            popup_7f754c0e50a540afb6f7db3f60af9b07.setContent(html_dc4d9c3c4d12436c812f0df4aa22047b);
+        
+
+        circle_3f14405c49c04d019d405b216216065f.bindPopup(popup_7f754c0e50a540afb6f7db3f60af9b07)
+        ;
+
+        
+    
+    
+            var circle_63fabf1561924098a892b7b07a635396 = L.circle(
+                [37.9135, 40.2374],
+                {"bubblingMouseEvents": true, "color": "#C0C0C0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C0C0C0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_38eb04d8cbc24c9c837aa41b2542fde9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fa4edd085334befb99deea33aeb59c1 = $(`<div id="html_8fa4edd085334befb99deea33aeb59c1" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: HBDH: Peoples United Revolutionary Movement<br> Date: 11 March 2022</div>`)[0];
+            popup_38eb04d8cbc24c9c837aa41b2542fde9.setContent(html_8fa4edd085334befb99deea33aeb59c1);
+        
+
+        circle_63fabf1561924098a892b7b07a635396.bindPopup(popup_38eb04d8cbc24c9c837aa41b2542fde9)
+        ;
+
+        
+    
+    
+            var circle_abe7d17aa39b418f92920dbb310889fc = L.circle(
+                [37.7644, 30.5522],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_59bf2832d06843fcbb276b8c76a52da3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b38b7b1b87dd451fbae8ab63f1df94ce = $(`<div id="html_b38b7b1b87dd451fbae8ab63f1df94ce" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 12 March 2022</div>`)[0];
+            popup_59bf2832d06843fcbb276b8c76a52da3.setContent(html_b38b7b1b87dd451fbae8ab63f1df94ce);
+        
+
+        circle_abe7d17aa39b418f92920dbb310889fc.bindPopup(popup_59bf2832d06843fcbb276b8c76a52da3)
+        ;
+
+        
+    
+    
+            var circle_ad6e63b35cca46538821af9f020cedd7 = L.circle(
+                [38.3726, 34.0254],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_c5803f9005ac45c8a767d6db4594124e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af0003d2bcb045b483a8714ff20f586c = $(`<div id="html_af0003d2bcb045b483a8714ff20f586c" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 12 March 2022</div>`)[0];
+            popup_c5803f9005ac45c8a767d6db4594124e.setContent(html_af0003d2bcb045b483a8714ff20f586c);
+        
+
+        circle_ad6e63b35cca46538821af9f020cedd7.bindPopup(popup_c5803f9005ac45c8a767d6db4594124e)
+        ;
+
+        
+    
+    
+            var circle_9064fa003ad2471699dafb379719ff8b = L.circle(
+                [37.716, 33.550700000000006],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_83452a50035f4597a5f15bc45a966d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f082326ef514667aeef6e853c693a04 = $(`<div id="html_0f082326ef514667aeef6e853c693a04" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 13 March 2022</div>`)[0];
+            popup_83452a50035f4597a5f15bc45a966d29.setContent(html_0f082326ef514667aeef6e853c693a04);
+        
+
+        circle_9064fa003ad2471699dafb379719ff8b.bindPopup(popup_83452a50035f4597a5f15bc45a966d29)
+        ;
+
+        
+    
+    
+            var circle_4d9cdf346fd44a92a9e375d2e5074ded = L.circle(
+                [40.7368, 30.3519],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_51fd21aae0894b079e53473751b00645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d8217f3932b48868a2e11e57d1c50f5 = $(`<div id="html_9d8217f3932b48868a2e11e57d1c50f5" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 14 March 2022</div>`)[0];
+            popup_51fd21aae0894b079e53473751b00645.setContent(html_9d8217f3932b48868a2e11e57d1c50f5);
+        
+
+        circle_4d9cdf346fd44a92a9e375d2e5074ded.bindPopup(popup_51fd21aae0894b079e53473751b00645)
+        ;
+
+        
+    
+    
+            var circle_f7bf8898335446df904a3df5b3a8926f = L.circle(
+                [40.2139, 28.9512],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_0231bcf9cd5248c196d1a78834513e64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a25836155011407a8df48a5d9e2da849 = $(`<div id="html_a25836155011407a8df48a5d9e2da849" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 14 March 2022</div>`)[0];
+            popup_0231bcf9cd5248c196d1a78834513e64.setContent(html_a25836155011407a8df48a5d9e2da849);
+        
+
+        circle_f7bf8898335446df904a3df5b3a8926f.bindPopup(popup_0231bcf9cd5248c196d1a78834513e64)
+        ;
+
+        
+    
+    
+            var circle_7649d23f72784aa88de7975e071cf668 = L.circle(
+                [38.3575, 31.4164],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_30a56b9646a741a6b02279cafc427639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a824a4ce07495bb32c6522e28c9c82 = $(`<div id="html_a2a824a4ce07495bb32c6522e28c9c82" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 14 March 2022</div>`)[0];
+            popup_30a56b9646a741a6b02279cafc427639.setContent(html_a2a824a4ce07495bb32c6522e28c9c82);
+        
+
+        circle_7649d23f72784aa88de7975e071cf668.bindPopup(popup_30a56b9646a741a6b02279cafc427639)
+        ;
+
+        
+    
+    
+            var circle_bb49c3369c064de7906a9a184ad90902 = L.circle(
+                [37.025, 36.6306],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_5debfd5a174c41169ecf93e0282b00d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c63732c758648a6835d20d895bf4769 = $(`<div id="html_9c63732c758648a6835d20d895bf4769" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 14 March 2022</div>`)[0];
+            popup_5debfd5a174c41169ecf93e0282b00d1.setContent(html_9c63732c758648a6835d20d895bf4769);
+        
+
+        circle_bb49c3369c064de7906a9a184ad90902.bindPopup(popup_5debfd5a174c41169ecf93e0282b00d1)
+        ;
+
+        
+    
+    
+            var circle_a9d60218395d4dd2b82f84fb2997e2f2 = L.circle(
+                [40.0781, 29.5133],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_1cc7e5d7a0194469b66f13e6bf9d5a2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45177d5fa10a4b0ebafe4e2b71d8e577 = $(`<div id="html_45177d5fa10a4b0ebafe4e2b71d8e577" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 14 March 2022</div>`)[0];
+            popup_1cc7e5d7a0194469b66f13e6bf9d5a2d.setContent(html_45177d5fa10a4b0ebafe4e2b71d8e577);
+        
+
+        circle_a9d60218395d4dd2b82f84fb2997e2f2.bindPopup(popup_1cc7e5d7a0194469b66f13e6bf9d5a2d)
+        ;
+
+        
+    
+    
+            var circle_37b1774acf0040cb95b3711176796748 = L.circle(
+                [36.3015, 36.1387],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_4035b366c368447dbbab02ba7489d900 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93507f55e84b4106aef53b7c1134ee06 = $(`<div id="html_93507f55e84b4106aef53b7c1134ee06" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 15 March 2022</div>`)[0];
+            popup_4035b366c368447dbbab02ba7489d900.setContent(html_93507f55e84b4106aef53b7c1134ee06);
+        
+
+        circle_37b1774acf0040cb95b3711176796748.bindPopup(popup_4035b366c368447dbbab02ba7489d900)
+        ;
+
+        
+    
+    
+            var circle_8b58a45f37ba4ee99ea45d1e610980db = L.circle(
+                [37.0742, 36.2478],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_a9f950f7ea8842b683fc5ed8eab7334f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c93bdb5d07ef429f9a48aea1ca92ccac = $(`<div id="html_c93bdb5d07ef429f9a48aea1ca92ccac" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 15 March 2022</div>`)[0];
+            popup_a9f950f7ea8842b683fc5ed8eab7334f.setContent(html_c93bdb5d07ef429f9a48aea1ca92ccac);
+        
+
+        circle_8b58a45f37ba4ee99ea45d1e610980db.bindPopup(popup_a9f950f7ea8842b683fc5ed8eab7334f)
+        ;
+
+        
+    
+    
+            var circle_b307ab47dfb04f238f6719f913dcdd39 = L.circle(
+                [40.7891, 29.5458],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_de17afd9833242bb88f46e079ba18141 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b62ed289b9b24deb8ef504396fe22b70 = $(`<div id="html_b62ed289b9b24deb8ef504396fe22b70" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 16 March 2022</div>`)[0];
+            popup_de17afd9833242bb88f46e079ba18141.setContent(html_b62ed289b9b24deb8ef504396fe22b70);
+        
+
+        circle_b307ab47dfb04f238f6719f913dcdd39.bindPopup(popup_de17afd9833242bb88f46e079ba18141)
+        ;
+
+        
+    
+    
+            var circle_07b64c610f0a4acaa3b9c8232b6931a9 = L.circle(
+                [36.605, 34.3084],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_908ceb95ed9149b1919cfd500a8c3ad9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4c671b915bb443d9442578efa142fc8 = $(`<div id="html_a4c671b915bb443d9442578efa142fc8" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 16 March 2022</div>`)[0];
+            popup_908ceb95ed9149b1919cfd500a8c3ad9.setContent(html_a4c671b915bb443d9442578efa142fc8);
+        
+
+        circle_07b64c610f0a4acaa3b9c8232b6931a9.bindPopup(popup_908ceb95ed9149b1919cfd500a8c3ad9)
+        ;
+
+        
+    
+    
+            var circle_d09ddb16af5c42b5a6fd10edc0727fa8 = L.circle(
+                [41.1065, 28.8685],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_a1c88885699a426bb59cbec8f6693a54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6363cceb20d6412691d03c284a2376d3 = $(`<div id="html_6363cceb20d6412691d03c284a2376d3" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 17 March 2022</div>`)[0];
+            popup_a1c88885699a426bb59cbec8f6693a54.setContent(html_6363cceb20d6412691d03c284a2376d3);
+        
+
+        circle_d09ddb16af5c42b5a6fd10edc0727fa8.bindPopup(popup_a1c88885699a426bb59cbec8f6693a54)
+        ;
+
+        
+    
+    
+            var circle_9c67cdc1d89640fe8794225ffe82361d = L.circle(
+                [38.7567, 30.5433],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_9eae61eb636846e9993d48dd6232a81f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9caf8a9acc94f15a4c6952690d35202 = $(`<div id="html_c9caf8a9acc94f15a4c6952690d35202" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 17 March 2022</div>`)[0];
+            popup_9eae61eb636846e9993d48dd6232a81f.setContent(html_c9caf8a9acc94f15a4c6952690d35202);
+        
+
+        circle_9c67cdc1d89640fe8794225ffe82361d.bindPopup(popup_9eae61eb636846e9993d48dd6232a81f)
+        ;
+
+        
+    
+    
+            var circle_1c92c30f7947437fbd9fd3248b54dc7f = L.circle(
+                [39.6492, 27.8861],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_ae83fe4223b34f4799b617957b7f8e79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d8f05ef1bc0418cb3fc6317851fce4d = $(`<div id="html_0d8f05ef1bc0418cb3fc6317851fce4d" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 17 March 2022</div>`)[0];
+            popup_ae83fe4223b34f4799b617957b7f8e79.setContent(html_0d8f05ef1bc0418cb3fc6317851fce4d);
+        
+
+        circle_1c92c30f7947437fbd9fd3248b54dc7f.bindPopup(popup_ae83fe4223b34f4799b617957b7f8e79)
+        ;
+
+        
+    
+    
+            var circle_ce2522209467424782a0ca2d1683631a = L.circle(
+                [41.011, 28.9578],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_0f8883c7d8194bfc9a0b54718f3d122a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88d045352cc24560a33cea687e39fa24 = $(`<div id="html_88d045352cc24560a33cea687e39fa24" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 18 March 2022</div>`)[0];
+            popup_0f8883c7d8194bfc9a0b54718f3d122a.setContent(html_88d045352cc24560a33cea687e39fa24);
+        
+
+        circle_ce2522209467424782a0ca2d1683631a.bindPopup(popup_0f8883c7d8194bfc9a0b54718f3d122a)
+        ;
+
+        
+    
+    
+            var circle_11bc6b639e3049bda239c7140c6a50ee = L.circle(
+                [40.9813, 29.0521],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_f51d2e2b90e747e1bbcf3e2371fc5675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ade910fe642c4459904c63b4d7f8636e = $(`<div id="html_ade910fe642c4459904c63b4d7f8636e" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 19 March 2022</div>`)[0];
+            popup_f51d2e2b90e747e1bbcf3e2371fc5675.setContent(html_ade910fe642c4459904c63b4d7f8636e);
+        
+
+        circle_11bc6b639e3049bda239c7140c6a50ee.bindPopup(popup_f51d2e2b90e747e1bbcf3e2371fc5675)
+        ;
+
+        
+    
+    
+            var circle_a452447742814716a3a8a9dda685f98f = L.circle(
+                [37.1884, 40.5772],
+                {"bubblingMouseEvents": true, "color": "#FFB266", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB266", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_88d54601666b4c738f40075547b80ce1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6d8a29150524b9599459866ad8c505e = $(`<div id="html_c6d8a29150524b9599459866ad8c505e" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 19 March 2022</div>`)[0];
+            popup_88d54601666b4c738f40075547b80ce1.setContent(html_c6d8a29150524b9599459866ad8c505e);
+        
+
+        circle_a452447742814716a3a8a9dda685f98f.bindPopup(popup_88d54601666b4c738f40075547b80ce1)
+        ;
+
+        
+    
+    
+            var circle_69d817679b9d48979a3cdbc4e3f79a70 = L.circle(
+                [40.8028, 29.4308],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_da228340a7514ced89ac57dded2b30ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bce43bf1d174fbda5891a1311fc806b = $(`<div id="html_7bce43bf1d174fbda5891a1311fc806b" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 19 March 2022</div>`)[0];
+            popup_da228340a7514ced89ac57dded2b30ed.setContent(html_7bce43bf1d174fbda5891a1311fc806b);
+        
+
+        circle_69d817679b9d48979a3cdbc4e3f79a70.bindPopup(popup_da228340a7514ced89ac57dded2b30ed)
+        ;
+
+        
+    
+    
+            var circle_3187e3142e7c4c9ab7886e24772236b9 = L.circle(
+                [40.8299, 29.3049],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_32bfe4a09c6a4989aa7bd3ad49dd67c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd5a3df3654040e587887058aefe1e4f = $(`<div id="html_dd5a3df3654040e587887058aefe1e4f" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 20 March 2022</div>`)[0];
+            popup_32bfe4a09c6a4989aa7bd3ad49dd67c7.setContent(html_dd5a3df3654040e587887058aefe1e4f);
+        
+
+        circle_3187e3142e7c4c9ab7886e24772236b9.bindPopup(popup_32bfe4a09c6a4989aa7bd3ad49dd67c7)
+        ;
+
+        
+    
+    
+            var circle_340932bed8754042a8ecdf310e3edd3a = L.circle(
+                [41.011, 28.9579],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_c705cf160c7e416380677711d3941460 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34296b9637e044d8ad96221395ab17e2 = $(`<div id="html_34296b9637e044d8ad96221395ab17e2" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: KBDH: Women's United Revolutionary Movement<br> Date: 20 March 2022</div>`)[0];
+            popup_c705cf160c7e416380677711d3941460.setContent(html_34296b9637e044d8ad96221395ab17e2);
+        
+
+        circle_340932bed8754042a8ecdf310e3edd3a.bindPopup(popup_c705cf160c7e416380677711d3941460)
+        ;
+
+        
+    
+    
+            var circle_6350243ae5c34a1ca704de180418b433 = L.circle(
+                [37.5736, 44.2874],
+                {"bubblingMouseEvents": true, "color": "#CC6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#CC6600", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_b206a9bf935a4c9aad4954b5cccbb03a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8b2b25a93384d798cae0da4687d4a0b = $(`<div id="html_c8b2b25a93384d798cae0da4687d4a0b" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Rioters<br> Date: 21 March 2022</div>`)[0];
+            popup_b206a9bf935a4c9aad4954b5cccbb03a.setContent(html_c8b2b25a93384d798cae0da4687d4a0b);
+        
+
+        circle_6350243ae5c34a1ca704de180418b433.bindPopup(popup_b206a9bf935a4c9aad4954b5cccbb03a)
+        ;
+
+        
+    
+    
+            var circle_d6983ab79f9443038a8208c9a2bcc3ed = L.circle(
+                [40.2259, 29.0439],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_939fb183871e4a9ebbc67bedf4cc7438 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14f248f03678489382170a35b11e4175 = $(`<div id="html_14f248f03678489382170a35b11e4175" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 21 March 2022</div>`)[0];
+            popup_939fb183871e4a9ebbc67bedf4cc7438.setContent(html_14f248f03678489382170a35b11e4175);
+        
+
+        circle_d6983ab79f9443038a8208c9a2bcc3ed.bindPopup(popup_939fb183871e4a9ebbc67bedf4cc7438)
+        ;
+
+        
+    
+    
+            var circle_48da011ef52e447d8c7a66d8f985c6bb = L.circle(
+                [40.982, 28.6399],
+                {"bubblingMouseEvents": true, "color": "#009900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009900", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_e5d642ab7ace4681bdb6cc9679046468 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a7e422180f849b5aa4e0e410c19a6ba = $(`<div id="html_7a7e422180f849b5aa4e0e410c19a6ba" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: Children of Fire<br> Date: 22 March 2022</div>`)[0];
+            popup_e5d642ab7ace4681bdb6cc9679046468.setContent(html_7a7e422180f849b5aa4e0e410c19a6ba);
+        
+
+        circle_48da011ef52e447d8c7a66d8f985c6bb.bindPopup(popup_e5d642ab7ace4681bdb6cc9679046468)
+        ;
+
+        
+    
+    
+            var circle_4d1cf8f7665f47458625b393fe209f1f = L.circle(
+                [41.1836, 28.7403],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1d4ca2af4b04329977e6aa5f808cfc8);
+        
+    
+        var popup_de640f916345496eb2c44e1770f98419 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cac4a87aa38466da16506eb18075b0e = $(`<div id="html_3cac4a87aa38466da16506eb18075b0e" style="width: 100.0%; height: 100.0%;">Fatalities: 0<br> Actor: HBDH: Peoples United Revolutionary Movement<br> Date: 23 March 2022</div>`)[0];
+            popup_de640f916345496eb2c44e1770f98419.setContent(html_3cac4a87aa38466da16506eb18075b0e);
+        
+
+        circle_4d1cf8f7665f47458625b393fe209f1f.bindPopup(popup_de640f916345496eb2c44e1770f98419)
+        ;
+
+        
+    
+</script>
